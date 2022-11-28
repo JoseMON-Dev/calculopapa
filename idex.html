@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/formulario.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/tablas.css">
+    <title>calcular papa
+    </title>
+</head>
+<body>
+    <header class="header_desktop">
+        <div class="titulo_program">
+            <h1>calacular papa unal</h1>
+        </div>
+    </header>
+    <main>
+        <section class="formulario">
+                <button class= "btn_calc" data-btncalc>calcular papa</button>
+                <button class="reset" data-reset>reset</button>
+                <button class="btn_save" data-btnsave> save</button>
+        </section>
+        <section class="tabla">
+            <ul data-tabla>
+                <li class="titulos">
+                    <h3 class="titulo">materia</h3>
+                    <h3 class="titulo">notas</h3>
+                    <h3 class="titulo">creditos</h3>
+                    <button class="add" data-add><i class="fa-solid fa-square-plus"></i></button>
+                </li>
+                <!-- <li class="inputs" data-listainfo>
+                    <input type="text" placeholder="nombre materia obsional" data-materia>
+                    <input type="number" data-nota>
+                    <input type="number" data-creditos class="input_numbers"> 
+                    <button class="btn_delete" data-delete><i class="fa-solid fa-trash"></i></button>   
+                </li> -->
+            </ul>
+        </section>
+        <section class="result">
+            <span class="papa" data-papa></span>
+        </section>
+    </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uuid/8.3.2/uuid.min.js" integrity="sha512-UNM1njAgOFUa74Z0bADwAq8gbTcqZC8Ej4xPSzpnh0l6KMevwvkBvbldF9uR++qKeJ+MOZHRjV1HZjoRvjDfNQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./components/script.js"></script>
+    <script src="https://kit.fontawesome.com/79973f9206.js" crossorigin="anonymous"></script>
+</body>
+</html>
