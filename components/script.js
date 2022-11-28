@@ -78,6 +78,11 @@ btnCalc.addEventListener('click',() => {
     calcularpap(h)
 });
 
+btnSave.addEventListener('click',(savestorage) => {
+    savessesion()
+    savestorage = listaDematerias
+    localStorage.setItem("materia",JSON.stringify(savestorage))
+});
 const savessesion = () => {
     listaDematerias = []
     listaid.forEach((id) => {
@@ -97,10 +102,7 @@ const savessesion = () => {
   sessionStorage.setItem('materia',JSON.stringify(listaDematerias))
 };
 
-btnSave.addEventListener('click',(savestorage) => {
-    savestorage = listaDematerias
-    localStorage.setItem("materia",JSON.stringify(savestorage))
-});
+
 
 const calcularpap = (creditospornota) => {
     let sumacreditos = 0
