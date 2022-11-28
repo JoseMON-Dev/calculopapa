@@ -98,6 +98,8 @@ const savessesion = () => {
 };
 
 btnSave.addEventListener('click',(savestorage) => {
+    console.log("cambioa aplicados")
+    savessesion()
     savestorage = listaDematerias
     localStorage.setItem("materia",JSON.stringify(savestorage))
 });
